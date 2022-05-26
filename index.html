@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MineSweeperJs</title>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body onload="init()">
+    <h3 class="title">Minesweeper</h3>
+    <div class="level-selection-div">
+      <select name="level" id="level-selection">
+        <option value="BEGINNER">BEGINNER</option>
+        <option value="MEDIUM">MEDIUM</option>
+        <option value="EXPERT">EXPERT</option>
+      </select>
+      <button id="start-btn">Create Board</button>
+    </div>
+    <div class="timer-div">
+      <span id="timer">0 sec</span>
+    </div>
+    <div class="subtext"></div>
+    <div class="board"></div>
+    <script src="js/minesweeper.js"></script>
+  </body>
+</html>

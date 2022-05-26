@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  h3 {
+    color: black;
+  }
+  
+  body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .title {
+    margin: 20px;
+  }
+  
+  .subtext {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .board {
+    display: inline-grid;
+    padding: 10px;
+    grid-template-columns: repeat(var(--size), 60px);
+    grid-template-rows: repeat(var(--size), 60px);
+    gap: 4px;
+    background-color: #777;
+  }
+  
+  .board > * {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid #bbb;
+    user-select: none;
+  }
+  
+  .board > [data-status="hidden"] {
+    background-color: #bbb;
+    cursor: pointer;
+  }
+  
+  .board > [data-status="mine"] {
+    background-color: red;
+  }
+  
+  .board > [data-status="number"] {
+    background-color: none;
+  }
+  
+  .board > [data-status="marked"] {
+    background-color: yellow;
+  }
+  .level-selection-div {
+    display: grid;
+  }
+  #level-selection {
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 0.45rem;
+  }
+  #start-btn {
+    margin-top: 0.5rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 0.45rem;
+  }
+  .timer-div {
+    display: none;
+    font-size: 2rem;
+    color: black;
+  }
+  
